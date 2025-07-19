@@ -1,0 +1,67 @@
+.service-card {
+  width: 325px;
+  position: relative;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+}
+
+.service-card:hover {
+  filter: grayscale(0);
+  transform: translateY(-10px);
+
+} 
+.service-card-number{
+  font-size: 60px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 3;
+   text-shadow: 4px 5px #bbb;
+
+}.service-card:hover .service-card-number{
+  color: #fc8500;  text-shadow: 4px 5px #fff;
+}
+.service-card-image{
+  width: 100%;
+  height: 70vh;
+  object-fit:cover;
+  position: absolute;
+  top: 50px;
+  box-shadow: 5px 5px 10px#3a3a39;
+}
+.service-card-content{
+  width: inherit;
+  position: absolute;
+  top: 350px;
+  z-index: 3;
+  background-color: #3a3a39;
+  padding:  0 auto;
+  height: 50px;
+  padding: 10px 25px;
+  transition: all .5s ease;
+}
+.service-card:hover .service-card-content{
+  height: 100px;
+  background-color: #fc8500;
+}
+.service-card-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.service-card-description{
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+.service-card:hover .service-card-icon{
+  transform: rotate(90deg);
+    transition: all .5s ease-in-out;
+}
+
+.service-card:hover .service-card-description{
+  opacity: 1;
+}

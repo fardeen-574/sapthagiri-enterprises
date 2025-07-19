@@ -1,0 +1,102 @@
+.primary-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0 5%;
+}
+
+.primary-bg-image {
+  background: url("../../assets/home_banner.webp") no-repeat right center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.primary-overlay {
+  background: linear-gradient( to bottom, #0a092288 90%,#0a0921 ) ; /* orange shade */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.primary-content {
+  position: relative;
+  z-index: 3;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+.primary-heading {
+  font-size: 30px;
+
+  font-weight: bold;  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* start invisible */
+  animation-delay: 0.5s;
+
+}
+
+.primary-tagline {
+  font-size: 55px;
+  color: #fc8500; /* lighter orange/yellow */
+
+  text-shadow: 1px 1px  #ffffff88 ;  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* start invisible */
+  animation-delay: 0.7s;
+}
+
+.primary-description {
+  font-size: 16px;
+  color: #f0f0f0;
+  font-weight: 600;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* start invisible */
+  animation-delay: 0.9s;
+}
+
+.primary-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: white;
+  max-width: 150px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* start invisible */
+  animation-delay: 1s;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #c46500;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}

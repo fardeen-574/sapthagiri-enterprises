@@ -1,0 +1,31 @@
+.manufacturing-process-container {
+
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0; /* optional spacing */
+  background-color: #e1e6e9; /* optional background */
+}
+.manufacturing-process-text{
+    padding: 50px 40px;
+}
+.manufacturing-process-first-title{
+    color:#fc8500;
+}
+.manufacturing-process-second-title{
+    color: black;
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px ;
+}
+.manufacturing-process-slider {
+  max-width: 1200px; /* or 1000px or any value that suits your layout */
+  width: 100%;
+  box-sizing: border-box;
+    display: flex;
+  align-items: center;
+  cursor: grab;
+}

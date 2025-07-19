@@ -1,0 +1,33 @@
+.contact-us-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px 50px;
+}
+.contact-us-left{
+    width: 50%;
+
+}
+.contact-us-title{
+    color: #fc8500;
+}
+.contact-us-heading{
+    font-size: 40px;
+}
+.contact-us-grid-details{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    gap: 20px; /* spacing between cards */
+    width: 100%;
+    padding: 30px 20px;
+}
+.contact-us-grid-item{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-us-grid-item > h2{
+    color: #fc8500;
+}

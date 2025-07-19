@@ -1,0 +1,191 @@
+.aboutPageHeader{
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 90%);
+  height: 90vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+   url(../../assets/AboutBG.jpg) no-repeat;
+  background-position-y:0% ;
+  background-attachment:initial;
+  background-size: cover;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutPageHeader > h1{
+  color: white;
+}
+.aboutPageContainer{
+  padding: 0 3.5%;
+
+}
+.introDescription{
+  font-size: 26px;
+  font-weight: 500;
+  width: 1000px;
+  text-align: center;
+  margin: 80px auto;
+
+}
+.aboutPageIntro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+.aboutPageIntroLeft {
+  min-width: 40%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutPageIntroLeft>h1{
+  font-size: 60px;
+  line-height: 60px;
+  color: #FC8500;
+  text-shadow: 3px 1px  #000000 ; 
+}
+.aboutPageIntroLeft > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.aboutPageIntroRight{
+  font-size: 25px;
+  border-left:  5px solid #FC8500;
+  padding: 50px;
+  background-color:#e0e5e8 ;
+}
+
+.proprietorcontainer{
+  margin: 6% 1%; 
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  place-items: center;
+  align-items: center;
+}
+.proprietorImage{
+  background-color: #33333333;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 250px;
+  height: auto;
+}
+.proprietorcontainer h1{
+  font-size: 32px;
+  color: #fc8500;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-left: 6px solid #FC8500;
+  padding-left: 1%;
+}
+.proprietorcontainer h2{
+    font-size: 24px;
+  font-weight: 700;
+  color: #0a0922;
+  margin-bottom: 4px;
+}
+.proprietorcontainer h3 {
+  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: #0000008c;
+  font-style: italic;
+}
+.proprietorcontainer p{
+   font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+}
+.teamSection{
+  margin: 6% 1%;
+}
+.teamHeading{
+  -webkit-text-stroke: 1px #fc8500;
+  color: transparent;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.teamExperienceContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 2rem;
+  background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../../assets/aboutteambg.jpg') no-repeat center ;
+  background-size: cover;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.teamExperience{
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes height equal to width */
+  color: #111;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.years{
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+}
+.typeOfExperience{
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  filter: blur(1%);
+}
+.certificationSection{
+  padding: 20px;
+}
+.certifcateHeader{
+  text-align: center;
+  color: #FC8500;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.281);
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.certificationContainer img{
+  width: 60%;
+  display: block;
+  margin: 0 auto 20px;
+  border: 1px solid black;
+
+}
+.certificationDescription{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.certificationQuote{
+  font-size: 19px;
+  text-align: center;
+    margin-bottom: 10px;
+}
+.IndustriesHeader{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 0, 100% 10%, 100% 100%, 0 90%);
+  background-color: #0a0922;
+  color: white;
+  text-shadow: 2px 2px 22px white;
+  font-size: 55px;
+  margin-bottom: 20px;
+  margin: 0 -3.5%;
+}
+.industriesContainer{
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+}
+.industry img{
+  width: 250px;
+}
+.industry h4{
+  text-align: center;
+  padding: 10px 0;
+  font-size:21px;
+
+}

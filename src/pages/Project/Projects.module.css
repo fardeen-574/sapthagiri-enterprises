@@ -1,0 +1,18 @@
+.ProjectsSection{
+    background-color:white;
+    color: black;
+}
+.projectsHeader{
+clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 85%);
+  height: 90vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+   url(../../assets/projectsBanner.jpg) no-repeat;
+   background-position: center;
+  background-attachment:initial;
+  background-size: cover;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

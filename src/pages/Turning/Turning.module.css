@@ -1,0 +1,110 @@
+.TurningSection{
+    background-color: white;
+    color: black;
+}
+.TurningHeader{
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 85%);
+  height: 90vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+   url(../../assets/cncturning.png) no-repeat;
+   background-position: center;
+  background-attachment:initial;
+  background-size: cover;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.iconSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.iconSection img{
+  width: 205px;
+  
+}
+.IntroductionSection {
+  margin: 0 auto;
+  font-size: 24px;
+  max-width:  90%;
+  padding:0% 3.5% 5%;
+  text-align: center;
+  font-weight: 400;
+
+}
+.IntroductionSection h1{
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 40px;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.CapabilitiesSection{
+  padding: 3.5% 0;
+}
+.Capabilitiesheading{ 
+  font-size: 62px;
+  -webkit-text-stroke: 1px #fc8500; /* Add stroke width */
+  color: transparent;  
+  text-align: center;
+  margin: 20px 0;
+}
+.CapabilitiesInfo{
+  margin: 0 10.5%;
+}
+.CapabilitiesName{
+    font-size: 24px;
+    padding: 1% 4%;
+}
+.CapabilitiesDetail  p {
+  padding: 0 3.5%;
+}
+.CapabilitiesDetail ul{
+    padding: 0 5.25%;
+}
+
+.processSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 10%;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.laserCTA {
+  background-color: #0a0922;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.laserCTA h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.laserCTA p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.laserCTA a {
+  background: white;
+  color: #0a0922;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.laserCTA a:hover {
+  background: #fc8500;
+  color: #fff;
+}

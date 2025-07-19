@@ -1,0 +1,21 @@
+.processSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 10%;
+  align-items: center;
+  padding: 40px 0;
+
+}
+.processStep{
+  text-align: center;
+}
+.processStep h4{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.processStep p{
+  color: rgba(0, 0, 0, 0.651);
+  font-size: 19px;
+}

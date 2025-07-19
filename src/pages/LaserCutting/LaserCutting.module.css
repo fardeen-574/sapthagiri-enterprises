@@ -1,0 +1,143 @@
+.laserCuttingSection{
+    background-color: white;
+    color: black;
+
+}
+.LaserCuttingHeader{
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 85%);
+  height: 90vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+   url(../../assets/cncLasercuttingBanner.png) no-repeat;
+   background-position: center;
+  background-attachment:initial;
+  background-size: cover;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.iconSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconSection img{
+  width: 275px;
+}
+
+.IntroductionSection {
+  margin: 0 auto;
+  font-size: 24px;
+  max-width:  90%;
+  padding:0% 3.5% 5%;
+}
+.MaterialSection h2 {
+  font-size: 62px;
+  -webkit-text-stroke: 1px #fc8500; /* Add stroke width */
+  color: transparent;  
+  text-align: center;
+  margin: 20px 0;
+
+}
+.MaterialInfo{
+  margin: 0 10.5%;
+}
+
+.materialName {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px;
+}
+.materialDetail ul {
+  padding: 0 3.5%;
+}
+
+
+.ApplicationSection{
+  margin: 2% 4.5%;
+}
+.ApplicationSection h3{
+   margin: 40px 0 20px;
+  padding: 1% 2%;
+  font-size: 36px;
+  border-left: 5px solid #fc8500;
+}
+
+.laserGrid {
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.laserCard {
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.laserCard h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: .5px solid rgba(0,0,0,0.1);
+}
+
+.processSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 10%;
+  align-items: center;
+  padding: 40px 0;
+}
+.processStep{
+  text-align: center;
+}
+.processStep h4{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.processStep p{
+  color: rgba(0, 0, 0, 0.651);
+  font-size: 19px;
+}
+
+
+.laserCTA {
+  background-color: #0a0922;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.laserCTA h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.laserCTA p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.laserCTA a {
+  background: white;
+  color: #0a0922;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.laserCTA a:hover {
+  background: #fc8500;
+  color: #fff;
+}
