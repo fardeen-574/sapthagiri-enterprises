@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, MailCheck } from "lucide-react";
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
             </div>
             <div className={styles.infoItem}>
-              <Mail className={styles.icon} />
+              <MailCheck className={styles.icon} />
               <div>
                 <strong>E-Mail</strong>
                 <p>mailto@sapthagirienterprises23@gmail.com</p>

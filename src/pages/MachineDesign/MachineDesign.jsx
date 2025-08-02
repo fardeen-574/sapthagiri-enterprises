@@ -1,5 +1,4 @@
 import styles from './MachineDesign.module.css'
-import React from 'react'
 import { AUTOCAD,CREO,Solidworks } from '../../assets'
 import { Link } from 'react-router-dom'
 const MachineDesign = () => {
@@ -21,7 +20,7 @@ const MachineDesign = () => {
           </div>
           <div className={styles.software}>SOFTWARE EXPERTISE</div>
           <div className={styles.softwareName}>
-          
+
             <div className={styles.softwareDetails}> 
               <div className={styles.softwareHeading}>AUTOCAD</div>
               <div className={styles.softwareInfo}>
@@ -33,7 +32,6 @@ const MachineDesign = () => {
             <img src={AUTOCAD} alt="AUTOCAD" />
           </div>
           <div className={styles.softwareName}>
-                <img src={CREO} alt="CREO" />
             <div className={styles.softwareDetails}>
               <div className={styles.softwareHeading}> PRO/E & CREO</div>
               <div className={styles.softwareInfo}>
@@ -42,7 +40,9 @@ const MachineDesign = () => {
                 performs reliably under real-world conditions.
               </div>
             </div>
+            <img src={CREO} alt="CREO" />
           </div>
+          
           <div className={styles.softwareName}>
             
             <div className={styles.softwareDetails}>

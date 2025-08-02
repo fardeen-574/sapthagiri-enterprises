@@ -1,8 +1,6 @@
 .contact-form-container {
   width: 100%;
-  min-width: 500px;
-  height: 100vh;
-  margin: auto;
+
   padding: 40px 50px;
   color: white;
   background-color: #121c22;
@@ -57,4 +55,24 @@
 .form-status {
   font-size: 14px;
   color: green;
+}
+
+
+
+/* tablet */
+@media (max-width: 768px) {
+  .contact-form-container{
+    padding: 20px 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 426px) {
+  .contact-form-container{
+    padding: 10px 35px;
+  }
+  .contact-form > h2{
+    font-size: 20px;
+  }
+  
 }

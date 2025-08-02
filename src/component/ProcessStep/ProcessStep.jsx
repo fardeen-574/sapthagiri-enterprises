@@ -1,6 +1,7 @@
 // components/ProcessStep.jsx
 import React from 'react';
 import styles from './ProcessStep.module.css';
+import { motion } from 'framer-motion';
 
 const gradientId = "gradient";
 
@@ -46,13 +47,26 @@ const ShapeSVG = ({ shape, number }) => {
 };
 
 const ProcessStep = ({ step }) => (
-  <div className={styles.processStep}>
-    <ShapeSVG shape={step.shape} number={step.number} />
+  <motion.div
+    className={styles.processStep}
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, ease: 'easeOut' }}
+    viewport={{ once: true, amount: 0.3 }}
+  >
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      <ShapeSVG shape={step.shape} number={step.number} />
+    </motion.div>
     <div>
       <h4>{step.title}</h4>
       <p>{step.description}</p>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default ProcessStep;

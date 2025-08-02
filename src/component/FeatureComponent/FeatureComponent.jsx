@@ -1,26 +1,53 @@
-import React from 'react'
-import styles from './FeatureComponent.module.css'
-const FeatureComponent = ({heading,features}) => {
+import React from 'react';
+import styles from './FeatureComponent.module.css';
+import { motion } from 'framer-motion';
+
+const FeatureComponent = ({ heading, features }) => {
   return (
-      <section className={styles.featureSection}>
-      <h2 className={styles.Featureheading}>{heading}</h2>
+    <motion.section 
+      className={styles.featureSection}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <motion.h2 
+        className={styles.Featureheading}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
+        {heading}
+      </motion.h2>
+
       <div className={styles.featureGrid}>
         {features.map((feature, index) => (
-          <div className={styles.featureCard} key={index}>
-            <feature.icon size={60} className={styles.featureIcon} />
+          <motion.div
+            className={styles.featureCard}
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <motion.div 
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              <feature.icon size={60} className={styles.featureIcon} />
+            </motion.div>
             <h3>{feature.title}</h3>
             <ul>
               {feature.points.map((point, idx) => (
-                <li key={idx}>
-                  {point}
-                </li>
+                <li key={idx}>{point}</li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
-  )
-}
+    </motion.section>
+  );
+};
 
-export default FeatureComponent
+export default FeatureComponent;

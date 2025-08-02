@@ -111,3 +111,37 @@
   background: #fc8500;
   color: #fff;
 }
+@media only screen and  (max-width: 768px) {
+  .MillingHeader{
+    height: 600px;
+    background-position:initial;
+    background-size: cover;
+  }
+  .MillingHeader h1{
+    font-size: 32px;
+  }
+   .IntroductionSection h1{
+    font-size: 34px;
+  }
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 427px) {
+  .MillingHeader{
+    height: 350px;
+    background-position:initial;
+    background-size: cover;
+  }
+
+  .MillingHeader h1{
+    font-size: 26px;
+  }
+  .iconSection img{
+    width: 150px;
+  }
+  .IntroductionSection h1{
+    font-size: 24px;
+  }
+  .IntroductionSection p{
+    font-size: 18px;
+  }
+}

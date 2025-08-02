@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Primary = () => {
   return (
     <section className="primary-container">
-      <div className="primary-bg-image"></div>
+      
       <div className="primary-overlay"></div>
       <div className="primary-content">
         <h1 className="primary-heading">Welcome to Sapthagiri Enterprises</h1>

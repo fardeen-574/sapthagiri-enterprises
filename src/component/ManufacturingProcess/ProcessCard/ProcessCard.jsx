@@ -5,16 +5,13 @@ const ProcessCard = ({pdata}) => {
      const { number, title, description } = pdata;
   return (
      <div className='process-card'>
-        <div className='process-card-number'>
-            <div className='card-main-number'>
-                {number}
-            </div>
-            <div className='card-step-number'>
-                 {number} step
-            </div>
+        <div className='card-main-number'>
+            {number}            
         </div>
-            
-     
+        <div className='card-step-number'>
+            {number} step
+        </div>
+
         <div className="process-card-content">
             <div className='process-card-title'> {title}</div>
             <div className='process-card-description'>

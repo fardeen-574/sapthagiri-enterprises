@@ -7,7 +7,7 @@
   background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
    url(../../assets/machineDesignBanner.png) no-repeat;
   background-position-y:0% ;
-  background-attachment:initial;
+
   background-size: cover;
   font-size: 40px;
   display: flex;
@@ -27,8 +27,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 20px 3.5%;
 }
 .primaryInfo h1{
+  text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
   padding-left: 15px;
@@ -37,8 +39,6 @@
 .primaryInfo p{
   text-align: center;
   font-size: 25px;
-  margin: 20px 0;
-  width: 85%;
 }
 .software{
   -webkit-text-stroke: 1px #fc8500;
@@ -47,26 +47,23 @@
   margin: 50px 3% 10px;
 }
 .softwareName{
-
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 30px;
   margin: 50px 3% ;
 }
 .softwareDetails{
   flex: 1;
-  max-width:  50%;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .softwareName img{
   flex: 1;
-  max-width:  50%;
-  height: 350px;
+  width: 500px;
+  object-fit: cover;
 }
 .softwareHeading{
   font-size: 35px;
@@ -113,4 +110,77 @@
 .laserCTA a:hover {
   background: #fc8500;
   color: #fff;
+}
+
+/* Large Screen Desktop */
+@media only screen and (min-width: 1025px) {
+
+}
+/* laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+ 
+}
+
+/* Tablet  */
+@media only screen and  (max-width: 768px) {
+  .MachinceDesignHeader{
+    height: 600px;
+    background-position:initial;
+    background-size: cover;
+  }
+  .MachinceDesignHeader h1{
+    font-size: 32px;
+  }
+  .primaryInfo h1{
+    font-size: 25px;
+  }.primaryInfo p{
+    font-size: 19px;
+  }.software{
+    font-size: 31px;
+  }
+  .softwareName{
+    flex-wrap: wrap;
+  }
+  .softwareHeading{
+    font-size: 27px;
+  }
+  .softwareInfo{
+    font-size: 20px;
+  }
+  .softwareName img{
+    width: 350px;
+  }
+  
+  
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 427px) {
+  .MachinceDesignHeader{
+    height: 350px;
+    background-position:initial;
+    background-size: cover;
+  }
+  .MachinceDesignHeader h1{
+    font-size: 26px;
+  }
+  .primaryInfo h1{
+    font-size: 15px;
+  }
+  .primaryInfo p{
+    font-size: 12px;
+  }.software{
+    font-size: 25px;
+  }
+  .softwareName{
+    flex-wrap: wrap;
+  }
+  .softwareHeading{
+    font-size: 23px;
+  }
+  .softwareInfo{
+    font-size: 16px;
+  }
+  .softwareName img{
+    width: 300px;
+  }
 }

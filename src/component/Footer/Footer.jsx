@@ -13,7 +13,8 @@ const Footer = () => {
         tabIndex={0}
       />
 
-      <div className="footer-detail-container">
+      <div className="footer-full-container">
+        <div className="footer-detail-container">
         <div className='f-header'>Get in touch</div>
         <a href='https://maps.app.goo.gl/6gdAwbS5eQEBHSH49?g_st=iw' target='_blank'> <MapPin color='#fc8500'/>Plot No. 116,<br />Navodaya Nagar,<br /> IDA Cherlapally, <br /> Phase-V,  -500 051 <br /> Hyderbad, India</a>
         <a href="tel:8790845999"> <Phone color='#fc8500' target='_blank'/> +91 8790845999</a>
@@ -29,8 +30,9 @@ const Footer = () => {
           <li><Link to='/cnc-turning'>CNC Turning</Link></li>
         </ul>
       </div>
+      </div>
       
-      <hr /><hr /><hr />
+
       
     </div>
   )

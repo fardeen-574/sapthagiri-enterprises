@@ -9,6 +9,7 @@ const ServiceCard = ( {data}) => {
         <div className='service-card-number'>
             {number}
         </div>
+        <div>
             <img className='service-card-image' src={image} alt="" />
      
         <div className="service-card-content">
@@ -16,6 +17,7 @@ const ServiceCard = ( {data}) => {
             <div className='service-card-description'>
                 {description}
             </div>
+        </div>
         </div>
     </div>
   )

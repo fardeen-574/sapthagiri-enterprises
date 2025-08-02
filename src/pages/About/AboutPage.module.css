@@ -3,34 +3,26 @@
   height: 90vh;
   background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
    url(../../assets/AboutBG.jpg) no-repeat;
-  background-position-y:0% ;
-  background-attachment:initial;
   background-size: cover;
   font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.aboutPageHeader > h1{
-  color: white;
-}
 .aboutPageContainer{
   padding: 0 3.5%;
-
 }
 .introDescription{
   font-size: 26px;
   font-weight: 500;
-  width: 1000px;
   text-align: center;
   margin: 80px auto;
-
 }
 .aboutPageIntro{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 2;
+  flex-wrap: nowrap;
 }
 .aboutPageIntroLeft {
   min-width: 40%;
@@ -58,17 +50,6 @@
 
 .proprietorcontainer{
   margin: 6% 1%; 
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  place-items: center;
-  align-items: center;
-}
-.proprietorImage{
-  background-color: #33333333;
-  border: 1px solid black;
-  border-radius: 50%;
-  width: 250px;
-  height: auto;
 }
 .proprietorcontainer h1{
   font-size: 32px;
@@ -109,6 +90,7 @@
 .teamExperienceContainer{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  place-items: center;
   gap: 2rem;
   background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../../assets/aboutteambg.jpg') no-repeat center ;
   background-size: cover;
@@ -124,6 +106,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 .years{
   font-size: 35px;
@@ -156,11 +139,12 @@
 .certificationDescription{
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .certificationQuote{
   font-size: 19px;
   text-align: center;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .IndustriesHeader{
   height: 40vh;
@@ -187,5 +171,162 @@
   text-align: center;
   padding: 10px 0;
   font-size:21px;
+}
 
+/* Large Screen Desktop */
+@media only screen and (min-width: 1025px) {
+
+}
+/* laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+ 
+}
+
+/* Tablet  */
+@media only screen and  (max-width: 768px) {
+  .aboutPageHeader{
+    height: 500px;
+    background-position:initial;
+    background-size: cover;
+  }
+  .introDescription{
+    font-size: 20px;
+  }
+  .aboutPageIntro{
+    flex-wrap: wrap;
+  }
+  .aboutPageIntroLeft p{
+    font-size: 15px;
+  }
+  .aboutPageIntroRight{
+    font-size: 19px;
+    width: 100%;
+    margin: 0;
+  }
+  .proprietorcontainer  h1{
+    padding-left: 10px;
+  }
+  .proprietorcontainer h2{
+    font-size: 22px;
+  }
+  .proprietorcontainer h3{
+    font-size: 16px;
+  }
+  .proprietorcontainer p{
+    font-size: 18px;
+  }
+  .teamHeading{
+    font-size: 30px;
+  }
+  .teamExperienceContainer{
+    grid-template-columns: auto auto;
+  }
+  .teamExperience{
+
+    width: 90%;
+  }
+  .years{
+    font-size: 22px;
+  }
+  .typeOfExperience{
+    font-size: 12px;
+  }
+  .certifcateHeader{
+   font-size: 30px;
+  }
+  .certificationDescription{
+    font-size: 14px;
+  }
+  .certificationQuote{
+    font-size: 14px;
+  }
+  .IndustriesHeader{
+    font-size: 30px;
+    height: 20vh;
+  }
+  .industriesContainer{
+    grid-template-columns: auto auto;
+  }
+  .industry img{
+    width: 125px;
+  }
+  .industry h4{
+    font-size: 12px;
+  }
+  
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 427px) {
+  .aboutPageHeader{
+
+    height: 250px;
+    background-position:initial;
+    background-size: cover;
+
+  }
+  .introDescription{
+    font-size: 18px;
+    margin: 40px auto 30px;
+  }
+  .aboutPageIntro{
+    flex-wrap: wrap;
+  }
+  .aboutPageIntroLeft p{
+    font-size: 15px;
+  }
+  .aboutPageIntroRight{
+    font-size: 19px;
+    width: 100%;
+    margin: 0;
+  }
+  .proprietorcontainer  h1{
+    padding-left: 10px;
+  }
+  .proprietorcontainer h2{
+    font-size: 22px;
+  }
+  .proprietorcontainer h3{
+    font-size: 16px;
+  }
+  .proprietorcontainer p{
+    font-size: 18px;
+  }
+  .teamHeading{
+    font-size: 30px;
+  }
+  .teamExperienceContainer{
+    grid-template-columns: auto auto;
+  }
+  .teamExperience{
+
+    width: 90%;
+  }
+  .years{
+    font-size: 22px;
+  }
+  .typeOfExperience{
+    font-size: 12px;
+  }
+  .certifcateHeader{
+   font-size: 30px;
+  }
+  .certificationDescription{
+    font-size: 14px;
+  }
+  .certificationQuote{
+    font-size: 14px;
+  }
+  .IndustriesHeader{
+    font-size: 30px;
+    height: 20vh;
+  }
+  .industriesContainer{
+    grid-template-columns: auto auto;
+  }
+  .industry img{
+    width: 125px;
+  }
+  .industry h4{
+    font-size: 12px;
+  }
 }

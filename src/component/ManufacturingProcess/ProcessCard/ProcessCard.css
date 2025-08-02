@@ -1,57 +1,140 @@
-.process-card{
-    width: 400px;
-    position: relative;
-    transition: all 0.4s ease;
-    left:50%;
-    background-color: white;
-    margin-top: 70px;
-    height: 60vh;
-    border-bottom: 3px solid #fc8500;
+.process-card {
+  width: 360px;
+  max-width: 90vw; /* Prevent overflow on small screens */
+  position: relative;
+  transition: all 0.4s ease;
+  background-color: white;
+  height: 60vh;
+  margin-top: 70px;
+  border-bottom: 3px solid #fc8500;
+  z-index: 100;
 }
-.process-card:hover{
-    transform: translateY(-35px);
-}
-.process-card:hover .card-main-number{
-    color: #fc8500;
-}
-.process-card-number{
-    position: relative; /* Required for absolute child */
-    display: flex;
-    justify-content: space-between;
-    align-items: self-end   ;
-    z-index: 10;
-    padding: 0 25px;
-}
-.card-main-number{
-    position: absolute;
-    top: -60px;
-    left: 20px;
-    font-size: 80px;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 1px #fc8500;
-    z-index: 0;
-}
-.card-step-number{
-    font-size: 16px;
-    font-weight: 500;
-    color: #fc8500;
-    z-index: 1;
-    margin-left: auto;
-    padding-top: 10px;
-}
-.process-card-content{
-  width: inherit;
-  color: black;
 
+.process-card:hover {
+  transform: translateY(-35px);
+}
+
+.process-card:hover .card-main-number {
+  color: #fc8500;
+}
+
+/* Main number above the card */
+.card-main-number {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  font-size: 80px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #fc8500;
+  z-index: 3;
+}
+
+.card-step-number {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fc8500;
+  z-index: 1;
+  margin-left: auto;
+  padding: 10px 25px 0 10px;
+  text-align: right;
+}
+
+.process-card-content {
+  width: 100%;
+  color: black;
   padding: 65px 20px;
-  /* background-color: rgb(94, 43, 43); */
 }
-.process-card-title{
-    font-size: 35px;
-    font-weight: 600;
+
+.process-card-title {
+  font-size: 30px;
+  font-weight: 600;
 }
-.process-card-description{
-    padding: 12px 0;
-    font-size: 18px;
+
+.process-card-description {
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+
+/* Large Screen Desktop */
+@media only screen and (min-width: 1280px) {
+    .process-card {
+    height: 45vh;
+
+  }
+}
+/* Laptop */
+
+@media (max-width: 1024px) {
+  .process-card {
+    height: 35vh;
+    width:fit-content;
+  }
+
+  .card-main-number {
+    font-size: 70px;
+    top: -50px;
+  }
+
+  .process-card-title {
+    font-size: 26px;
+  }
+
+  .process-card-description {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .process-card {
+    height: 30vh;
+    width:fit-content;
+  }
+
+  .card-main-number {
+    font-size: 60px;
+    top: -45px;
+  }
+
+  .process-card-title {
+    font-size: 24px;
+  }
+
+  .process-card-description {
+    font-size: 14px;
+  }
+
+  .manufacturing-process-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 426px) {
+  .process-card {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .card-main-number {
+    font-size: 50px;
+    top: -40px;
+  }
+
+  .process-card-title {
+    font-size: 22px;
+  }
+
+  .process-card-description {
+    font-size: 14px;
+  }
+
+  .manufacturing-process-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+
+  }
 }

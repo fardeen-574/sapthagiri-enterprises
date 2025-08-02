@@ -1,14 +1,14 @@
 .services{
-  background: linear-gradient(to top, #e0e5e8 90%, #0a0921 1%);
-  padding-top: 150px ;
+  background: linear-gradient(to top, #e0e5e8 90%, #e0e5e8 1%);
+  padding: 2% 0;
+  margin: 2% 0;
 }
 .services-container{
     width: 100%;
     display: flex;
-      padding: 10px 4%;
+    padding: 10px 4%;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 .services-container>h1{
     text-align: left;
@@ -48,38 +48,38 @@
 }
 
 
-.services-slides-container{
-    width: inherit;
-   margin-left: 1%;
+.services-slides-container {
+  margin: 2% 0 ;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;  /* <-- This aligns vertically */
-  flex-direction: column; /* if stacking content vertically */
-
-  height: 90vh;
+  flex-direction: column;
+  align-items: center;
 }
 .services-slides{
-    width: inherit;
+    width: 95%;
     height: inherit;
 }
-
+.services-slides .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
 
 /* Custom pagination container */
-.swiper-pagination {
-  bottom: 20px !important;
+.custom-pagination{
+  margin-top:10px ;
   text-align: center;
 }
 
 /* Base bullet style */
 .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  background-color: #fc8500 !important;
   border: 2px solid #fc8500;
   border-radius: 50%;
   margin: 0 6px;
-  opacity: 0.6;
+  opacity:1;
   transition: all 0.3s ease;
 }
 
@@ -88,4 +88,77 @@
   background-color: #fc8500;
   opacity: 1;
   transform: scale(1.2);
+}
+
+/* Change Swiper navigation arrow colors */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #fc8500;
+  transition: color 0.3s ease;
+}
+
+:global(.swiper-button-next:hover),
+:global(.swiper-button-prev:hover) {
+  color: #e37500;
+}
+/* Add spacing between slides and pagination bullets */
+:global(.swiper-pagination) {
+  margin-top: 30px; /* Adjust spacing as needed */
+  position: relative; /* Keep it below the Swiper */
+}
+
+/* Optional: Center the bullets */
+:global(.swiper-pagination-bullets) {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .services-slides-container{
+    height: 40vh;
+  }
+}
+/* Tablet  */
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+    .services-content-container{
+    padding-bottom: 25px;
+  }
+  .services-container>h1{
+    font-size: 13px;
+  }
+  .services-content-left>p{
+    font-size: 23px;
+  }
+  .services-content-left>a{
+    font-size: 10px;
+  }
+  .services-content-right{
+    font-size: 11px;
+  }
+  .services-slides-container{
+    height: 50vh;
+  }
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 426px) {
+  .services-content-container{
+    padding-bottom: 25px;
+  }
+  .services-container>h1{
+    font-size: 10px;
+  }
+  .services-content-left>p{
+    font-size: 15px;
+  }
+  .services-content-left>a{
+    font-size: 8px;
+  }
+  .services-content-right{
+    font-size: 9px;
+  }
+  .services-slides-container{
+    height: 50vh;
+  }
 }

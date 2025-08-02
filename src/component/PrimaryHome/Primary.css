@@ -9,19 +9,12 @@
   justify-content: center;
   text-align: left;
   padding: 0 5%;
+  background: url("../../assets/home_banner.webp") no-repeat  center;
+  background-size:cover;
+
 }
 
-.primary-bg-image {
-  background: url("../../assets/home_banner.webp") no-repeat right center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
+
 
 .primary-overlay {
   background: linear-gradient( to bottom, #0a092288 90%,#0a0921 ) ; /* orange shade */
@@ -39,17 +32,13 @@
   max-width: 850px;
   display: flex;
   flex-direction: column;
- 
-
 }
 
 .primary-heading {
   font-size: 30px;
-
   font-weight: bold;  animation: fadeInUp 1s ease-out forwards;
   opacity: 0; /* start invisible */
   animation-delay: 0.5s;
-
 }
 
 .primary-tagline {
@@ -63,7 +52,7 @@
 
 .primary-description {
   font-size: 16px;
-  color: #f0f0f0;
+  color: #ffffffce;
   font-weight: 600;
   line-height: 1.6;
   animation: fadeInUp 1s ease-out forwards;
@@ -76,7 +65,7 @@
   padding: 10px 20px;
   background-color: #ff8c00;
   color: white;
-  max-width: 150px;
+  width: fit-content;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -98,5 +87,63 @@
   100% {
     opacity: 1;
     transform: translatex(0);
+  }
+}
+
+/* Large Screen Desktop */
+@media only screen and (min-width: 1025px) {
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .primary-heading{
+    font-size: 18px;
+  }
+  .primary-tagline{
+    font-size: 30px;
+  }
+  .primary-description{
+    font-size: 15px;
+  }
+  .primary-button{
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+/* Tablet  */
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+  .primary-container{
+    height:50vh;
+  }
+  .primary-heading{
+    font-size: 15px;
+  }
+  .primary-tagline{
+    font-size: 27px;
+  }
+  .primary-description{
+    font-size: 12px;
+  }
+  .primary-button{
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 426px) {
+  .primary-container{
+    height:50vh;
+  }
+  .primary-heading{
+    font-size: 10px;
+  }
+  .primary-tagline{
+    font-size: 18px;
+  }
+  .primary-description{
+    font-size: 8px;
+  }
+  .primary-button{
+    font-size: 6px;
+    padding: 4px 6px;
   }
 }

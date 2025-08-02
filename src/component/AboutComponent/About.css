@@ -11,16 +11,22 @@
 .about-content{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
-
+    flex-wrap: wrap;
 }
 .arrow-icon{
-    color: #fc8500;
-    font-weight: 100;
-    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+.arrow-sizing {
+  width: 380px;
+  height: 380px;
 }
 .about-text-content{
     color: black;
+    flex: 1;
+    padding: 10px 15px;
 }
 .about-compnay-name{
     color: #fc8500;
@@ -46,4 +52,81 @@
     display: flex;
     color: #fc8500;
     padding: 10px 0;
+}
+
+
+/* tablet*/
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    .year-heading{
+        font-size: 52px;
+    }
+    .arrow-sizing {
+        width: 280px;
+        height: 280px;
+    }
+    .about-text-content{
+        padding: 5px 15px;
+    }
+    .about-compnay-name{
+        font-size: 14px;
+
+    }
+    .about-title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .about-sub-title{
+        font-size: 15px;
+        
+    }
+    .about-description{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .about-link{
+        display: flex;
+        align-items: center;
+    font-size: 14px;
+    }
+    .about-link-icon{
+        height: 18px;
+    }
+}
+/* Mobile and lil small tablet (<= 580px) */
+@media only screen and (max-width: 580px) {
+    .year-heading{
+        font-size: 52px;
+    }
+    .arrow-icon{
+    display: none;
+    }
+    .about-text-content{
+        padding: 5px 15px;
+    }
+    .about-compnay-name{
+        font-size: 14px;
+        text-align: center;
+    }
+    .about-title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .about-sub-title{
+        font-size: 15px;
+        text-align: center;
+    }
+    .about-description{
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .about-link{
+        display: flex;
+        align-items: center;
+    font-size: 14px;
+    }
+    .about-link-icon{
+        height: 18px;
+    }
 }
