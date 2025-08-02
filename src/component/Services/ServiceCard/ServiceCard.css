@@ -30,7 +30,7 @@
 .service-card-content {
   width: inherit;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   z-index: 3;
   background-color: #3a3a39;
   height: 50px;
@@ -110,6 +110,12 @@
     height: 100%;
   }
   .service-card-image {
-    height: 40vh;
+    height: 100%;
+  }
+  .service-card-title{
+    font-size: 15px;
+  }
+  .service-card-description{
+    font-size: 12px;
   }
 }

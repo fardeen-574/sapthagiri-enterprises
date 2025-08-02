@@ -8,8 +8,8 @@ const FeatureComponent = ({ heading, features }) => {
       className={styles.featureSection}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <motion.h2 
         className={styles.Featureheading}

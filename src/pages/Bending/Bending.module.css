@@ -29,11 +29,9 @@
 .IntroductionSection {
   margin: 0 auto;
   font-size: 24px;
-  max-width:  90%;
   padding:0% 3.5% 5%;
   text-align: center;
   font-weight: 400;
-
 }
 .IntroductionSection h1{
     color: rgba(0, 0, 0, 0.685);
@@ -117,7 +115,7 @@
     font-size: 32px;
   }
    .IntroductionSection h1{
-    font-size: 34px;
+    font-size: 25px;
   }
 }
 /* Mobile (<= 480px) */
@@ -135,7 +133,7 @@
     width: 150px;
   }
   .IntroductionSection h1{
-    font-size: 24px;
+    font-size: 18px;
   }
   .IntroductionSection p{
     font-size: 18px;
